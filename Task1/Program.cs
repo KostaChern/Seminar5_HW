@@ -7,23 +7,18 @@
 
 Console.Clear();
 
-
 int HonestArray(int[] array)
 {
-    int sum = 0;  // Сумма накопления
-    for (int i = 0; i < array.Length; i++) // цикл перебора по массиву
+    int sum = 0;  
+    for (int i = 0; i < array.Length; i++) 
     {
-
-        if (array[i] % 2 == 0)
+        if (array[i] % 2 == 0)   // определяем четные элементы
         {
-            sum++;             // накапливаем сумму
+            sum++;            
         }
-
-
     }
     return sum;
 }
-
 
 int[] GenerateArray(int length, int minValue, int maxValue)
 {
@@ -44,7 +39,6 @@ void PrintArray(int[] array)
     }
     System.Console.WriteLine();
 }
-
 
 int size = 12;
 int minValue = 100;
